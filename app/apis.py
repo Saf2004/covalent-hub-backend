@@ -94,7 +94,7 @@ def user_register():
 
         #insert the user info into the database
         collection.insert_one({'user_id': user_id, 'name': request.json['name'], 'username': request.json['username'],
-                               'age': request.json['age'], 'country': request.json['country'],
+                               'birthdate': request.json['birthdate'], 'country': request.json['country'],
                                'email': request.json['email'], 'phone': request.json['phone'],
                                'password': hashed_password})
 
